@@ -1,0 +1,11 @@
+@mixin container{
+    max-width: 1440px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+@mixin md{
+    @media (max-width: 768px){
+        @content;
+    }
+}

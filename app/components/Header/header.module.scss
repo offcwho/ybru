@@ -1,0 +1,27 @@
+@import "../../styles/settings.scss";
+
+.root{
+    &__container{
+        @include container;
+        display: flex;
+        padding-block: 10px;
+        align-items: center;
+        gap: 50px;
+        padding-inline: 20px;
+        @include md{
+            gap: 0;
+            justify-content: space-between;    
+        }
+    }
+    &__button{
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        border: none;
+        border-radius: 10px;
+        display: none;
+        @include md{
+            display: flex;
+        }
+    }
+}
