@@ -1,0 +1,19 @@
+@import "../../styles/settings.scss";
+
+.root{
+    background-color: #fff;
+    &__container{
+        @include container;
+    }
+    &__title{
+        font-size: 48px;
+        margin-bottom: 20px;
+        color: #000;
+    }
+    &__slide{
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #000;
+        border: 1px solid #2c2c2c;
+    }
+}
