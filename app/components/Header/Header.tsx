@@ -1,12 +1,9 @@
 'use client'
 
 import Link from "next/link"
-import Image from "next/image"
 
 import styles from "./header.module.scss"
 
-
-import { useState } from "react"
 import NavDesktop from "./Nav-desktop/NavDesktop"
 import NavMobile from "./NavMobile/NavMobile"
 
