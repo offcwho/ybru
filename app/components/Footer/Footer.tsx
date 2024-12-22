@@ -45,7 +45,7 @@ export default function Footer(){
             </ul>
             <div className={styles.root__offert}>
                 <a href="#!" className={styles.root__link}>Пользовательские оферты</a>
-                <span className={styles.root__company}> ООО "НПК "РПР"</span>
+                <span className={styles.root__company}> ООО НПК  РПР</span>
             </div>
         </div>
     </footer>
