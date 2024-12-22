@@ -1,0 +1,31 @@
+@import "../../styles/settings.scss";
+
+.root{
+    background-color: #fff;
+    &__container{
+        @include container;
+    }
+    &__title{
+        text-align: center;
+        font-size: 48px;
+        margin-bottom: 20px;
+        color: #000;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin-inline: auto;
+        gap: 10px;
+    }
+    &__input{
+        background-color: #000;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        padding-inline: 20px;
+        &:focus-visible{
+            outline: none;
+        }
+    }
+}

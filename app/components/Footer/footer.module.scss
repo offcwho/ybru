@@ -1,0 +1,110 @@
+@import "../../styles/settings.scss";
+
+.root{
+    background-color: #fff;
+    max-height: 1000px;
+    height: 100%;
+    padding-bottom: 8px;
+    @media (max-width: 1200px){
+        padding-bottom: 4px!important;
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: "a b c";
+        width: 100%;
+        justify-content: space-between;
+      
+        padding-block: 40px 20px;
+        
+        background: #F2F4FC;
+        @include container;
+        @media (max-width: 1200px){
+            padding-inline: 16px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: 
+            "a b b"
+            "c c c";
+        }
+        @media (max-width: 760px){
+            padding-inline: 10px;
+            grid-template-areas: 
+            "a"
+            "b"
+            "c";
+            grid-template-columns: none;
+        }
+    }
+    &__logo{
+        margin-bottom: 20px;
+        color: #000;
+        font-size: 48px;
+        grid-area: a;
+    }
+    &__list{
+        grid-area: b;
+        display: flex;
+        list-style: none;
+        gap: 150px;
+        @media (max-width: 1200px){
+            gap: 50px;
+            max-width: auto;
+            margin-top: 7px;
+            margin-bottom: 25px;
+        }
+        @media (max-width: 760px){
+            gap: 16px;
+            justify-content: space-between;
+        }
+        &Item{
+            list-style: none;
+            @media (max-width: 1200px){
+                font-size: 12px;
+            }
+        }
+    }
+    &__item{
+        &Title{
+            margin-bottom: 16px;
+            color: #000;
+            @media (max-width:1200px){
+                font-size: 16px;
+                margin-top: 8px;
+            }
+        }
+        &List{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: #000;
+            
+        }
+    }
+    &__offert{
+        grid-area: c;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 100%;
+        @media (max-width: 1200px) {
+            flex-direction: row;
+        }
+    }
+    &__company{
+        color: #A6ACC8;
+        font-size: 14px;
+        font-weight: 400;
+        @media(max-width:1200px){
+            font-size: 12px;
+        }
+    }
+    &__link{
+        font-size: 14px;
+        font-weight: 400;
+        color: #000;
+        @media(max-width:1200px){
+            font-size: 12px;
+        }
+    }
+}

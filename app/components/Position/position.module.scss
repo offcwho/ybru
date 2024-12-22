@@ -1,7 +1,15 @@
 @import "../../styles/settings.scss";
 
 .root{
+    background-color: #000;
     &__container{
         @include container;
+    }
+    &__title{
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    &__frame{
+        border: none;
     }
 }

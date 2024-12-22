@@ -1,0 +1,22 @@
+@import "../../styles/settings.scss";
+
+.root{
+    &__container{
+        @include container;
+    }
+    &__slider{
+        max-width: 500px;
+    }
+    &__title{
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__name{
+        font-size: 24px;text-align: center;
+    }
+    &__description{
+        font-size: 18px;
+        text-align: center;
+    }
+}
